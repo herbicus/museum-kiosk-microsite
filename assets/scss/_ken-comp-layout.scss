@@ -1,0 +1,288 @@
+// -------------------------------------
+//   Ken Comp Layout
+// -------------------------------------
+// ----- Project Specific Stylings
+// -------------------------------------
+
+.l-hero-lines {
+	width: 100%;
+	//height: 150px;
+	height: 0;
+	background: url("../img/hero-logo-lines.png")repeat-x;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	background-position: center center;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	@include transform(translate(-50%, -50%));
+	img {
+		width: 100%;
+		max-width: 40%;
+		opacity: 0;
+		position: absolute;
+		left: 40%;
+		top: 50%;
+		@include transform(translate( -50%, -50%));
+	}
+}
+
+.ken-section-1, .ken-section-2,
+.ken-section-3, .ken-section-4 {
+	background: $siteOrange;
+	min-height: 100vh;
+	border-bottom: 5px solid $siteBrown;
+	position: relative;
+	overflow: hidden;
+	color: $white;
+	
+	.two-col {
+		height: 100vh;
+	}
+	
+	h1, p, h3 {
+		color: $white;
+		bottom: 0;
+		position: relative;
+		z-index: 5;
+	}
+
+	p {
+		font-size: 14px;
+		//padding: 0 30%;
+		text-align: left;
+				
+	}
+
+	h4 {
+		font-size: 1.25em;
+		position: relative;
+		z-index: 5;
+	}
+}
+
+.l-section-divider {
+	width: 100%;
+	background: transparent;
+	height: 160px;
+}
+
+.orange-tab-background {
+	background: url("../img/orange-tab.png")repeat-y left center;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	
+}
+
+.blue-tab-background {
+	background: url("../img/blue-tab.png")repeat-y center center;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	
+}
+
+.brown-tab-background {
+	background: url("../img/brown-tab.png")repeat-y center center;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	
+}
+
+// -------------------------------------
+// ----- Section 1
+// -------------------------------------
+
+.l-outline-img {
+	background: url("../img/console-outline.png");
+	@include bg-contain;
+	width: 100%;
+	max-width: 560px;
+	height: 100%;
+	max-height: 550px;
+	@include centerer;
+	z-index: 1;
+	
+	opacity: 0;
+	left: 30%;
+	
+	
+}
+
+.ken-section-1 {
+	border-top: 5px solid $siteBrown;
+
+	.content-copy {
+		padding-top: 15%;
+		padding-left: 30%;
+	}
+
+	h1, small {
+		padding-top: 90%;
+	}
+
+	strong {
+		font-family: 'codeProRegular';
+		letter-spacing: 0.5px;
+	}
+}
+
+// -------------------------------------
+// ----- Section 2
+// -------------------------------------
+
+.ken-section-2 {
+	.content-copy {
+		padding-top: 30%;
+		padding-left: 10%;
+	}
+
+	h3 {
+		padding-top: 65%;
+		font-family: 'codeProLight';
+	}
+
+	h1, small {
+		padding-top: 30%;
+	}
+}
+
+.l-console-img {
+	background: url("../img/console.png");
+	@include bg-contain;
+	width: 100%;
+	max-width: 600px;
+	height: 100%;
+	max-height: 550px;
+	@include centerer;
+	z-index: 1;
+	
+	opacity: 0;
+	top: 80%;
+}
+
+// -------------------------------------
+// ----- Section 3
+// -------------------------------------
+
+
+.ken-section-3 {
+
+	.l-3-display-img {
+		background: url("../img/display-star.png");
+		@include bg-contain;
+		width: 100%;
+		max-width: 760px;
+		height: 100%;
+		max-height: 430px;
+		@include centerer;
+		@include transform(translate( -50%, -50%) scale(0));
+		z-index: 1;
+		
+
+		opacity: 0;
+		top: 90%;
+	}
+
+	.l-3-console-img {
+		background: url("../img/console-star.png");
+		@include bg-contain;
+		width: 100%;
+		max-width: 500px;
+		height: 100%;
+		max-height: 450px;
+		@include centerer;
+		z-index: 1;
+		
+		opacity: 0;
+		top: 90%;
+	}
+
+	.content-copy {
+		padding: 5% 13% 0 22%;
+		text-shadow: 0 2px 2px $black;
+		
+		@include media(max-width 1280px, 6) {
+			padding: 5% 10% 0 10%;
+			
+			p {
+				background: rgba($black, 0.5);
+				padding: 5%;
+				-webkit-border-radius: 5px;
+				        border-radius: 5px;
+			}
+
+		}
+	}
+
+	h1, small {
+		padding-top: 80%;
+	}
+
+}
+
+// -------------------------------------
+// ----- Section 4
+// -------------------------------------
+
+
+.ken-section-4 {
+	.l-4-display-img {
+		background: url("../img/display-dino.png");
+		@include bg-contain;
+		width: 100%;
+		max-width: 760px;
+		height: 100%;
+		max-height: 430px;
+		@include centerer;
+		@include transform(translate( -50%, -50%) scale(0));
+		z-index: 1;
+		
+		opacity: 0;
+		top: 90%;
+	}
+
+	.l-4-console-img {
+		background: url("../img/console-dino.png");
+		@include bg-contain;
+		width: 100%;
+		max-width: 500px;
+		height: 100%;
+		max-height: 450px;
+		@include centerer;
+		z-index: 1;
+		
+		opacity: 0;
+		top: 90%;
+	}
+
+	.content-copy {
+		padding: 5% 13% 0 22%;
+		text-shadow: 0 2px 2px $black;
+		
+		@include media(max-width 1280px, 6) {
+			padding: 5% 10% 0 10%;
+			
+			p {
+				background: rgba($black, 0.65);
+				padding: 5%;
+				-webkit-border-radius: 5px;
+				        border-radius: 5px;
+			}
+		}
+	}
+
+	h1, small {
+		padding-top: 80%;
+	}
+
+	
+
+}
+
+
+
+

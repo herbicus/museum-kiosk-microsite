@@ -1,0 +1,171 @@
+// -------------------------------------
+//   Page Layout
+// -------------------------------------
+// ----- Project Specific Stylings
+// -------------------------------------
+
+.l-hero-section {
+	background: url(../img/space-bg.jpg)fixed;
+	@include bg-cover;
+	background-position: 50% 0;
+	width: 100%;
+	display: table;
+	min-height: 100vh;
+
+	.l-hero-content {
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		text-shadow: 0 2px 2px $navy;
+	}
+
+	// .l-hero-content {
+	// 	// @include centerer;
+		
+	// 	h1 {
+	// 		@include centerer;
+	// 		color: $white;
+	// 		text-align: center;
+	// 		padding: 2%;
+	// 		border: 5px solid $white;
+	// 		width: 300px;
+	// 	}
+
+	// }
+
+}
+
+// -------------------------------------
+// ----- Section 2
+// -------------------------------------
+
+.l-section-2 {
+	background: url(../img/orange-lightOrange1-bg.png);
+	@include bg-cover;
+	
+	.section-2-copy {
+		position: relative;
+		top: 5em;
+		letter-spacing: 0.75px;
+		position: relative;
+		left: 20%;
+		opacity: 0;
+		
+		p {
+			text-align: left;
+
+		}
+	}
+
+	.l-kiosk-img {
+		background: url("../img/kiosk.jpg");
+		@include bg-contain;
+		width: 100%;
+		max-width: 400px;
+		height: 600px;
+		position: relative;
+		left: -20%;
+		opacity: 0;
+	}
+}
+
+// -------------------------------------
+// ----- Section 3
+// -------------------------------------
+
+.l-section-3 {
+	background: url(../img/orange-lightOrange2-bg.png);
+	@include bg-cover;
+	
+	.four-col {
+		position: relative;
+		top: -50px;
+		opacity: 0;
+		h1 {
+			font-family: 'socicon';
+		}
+	}
+}
+
+
+// -------------------------------------
+// ----- Section 4
+// -------------------------------------
+
+.l-section-4 {
+	background: url(../img/orange-blue-bg.png);
+	@include bg-cover;
+	
+	.l-kiosk-img {
+		background: url("../img/kiosk.jpg");
+		@include bg-contain;
+		width: 100%;
+		max-width: 300px;
+		height: 400px;
+		position: relative;
+		opacity: 0;
+	}
+
+	.section-4-copy {
+		padding-top: 5em;
+		position: relative;
+		opacity: 0;
+		p {
+			text-align: left;
+		}
+	}
+}
+
+.feature-1-copy {
+	left: -20%;
+	opacity: 0;
+}
+
+.feature-1-img {
+	left: 20%;
+	opacity: 0;
+	position: relative;
+}
+
+.feature-2-img {
+	left: -20%;
+	opacity: 0;
+	position: relative;
+}
+
+.feature-2-copy {
+	left: 20%;
+	opacity: 0;
+}
+
+.feature-3-copy {
+	left: -20%;
+	opacity: 0;
+}
+
+.feature-3-img {
+	left: 20%;
+	opacity: 0;
+	position: relative;
+}
+
+.feature-4-img {
+	left: -20%;
+	opacity: 0;
+	position: relative;
+}
+
+.feature-4-copy {
+	left: 20%;
+	opacity: 0;
+}
+
+// background: url(../img/orange-brown-bg.png);
+// @include bg-cover;
+
+
+
+
+
+
